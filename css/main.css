@@ -4,6 +4,56 @@
    Author's custom styles
    ========================================================================== */
 
+#publicidade{
+	padding:20px;
+}
+#tabela{
+	padding: 10px;
+}
+#tabela .row{
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+#tabela .col-md-3 .row{
+	padding-left: 15px;
+	background: #ccc;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#comercial-header,
+#featured,
+#games {
+	margin-top: 20px;
+}
+
+#featured, div[class*="col-md"] {
+	/*padding: 2px;*/
+}
+
+.game > ul {
+	background: #282c33;
+}
+
+.game > ul > li {
+	margin: 0 0;
+}
+
+.game, span {
+	color: #FAFAFA;
+	margin 0 auto;
+}
+
+.img-time {
+	width: 4rem;
+	height: 4rem;
+}
+
+
 
 
 

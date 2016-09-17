@@ -23,25 +23,97 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-
-<body>
-  <div id="header"></div>
-
-  <div class="container-fluid" id="ad-header">
-    <img src="http://placehold.it/728x90" alt="" class="img-responsive center-block">
-  </div>
-
-  <div id="footer"></div>
-
-    <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
+   
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container-fluid" id="publicidade">
+        <img src="http://placehold.it/728x90" alt="" class="img-responsive center-block">
+    </div>
+    <section id="featured" class="container">
+        <div class="col-md-6">
+            <div class="carousel slide" data-ride="carousel" id="destaques">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="http://placehold.it/585x380" class="img-responsive" /></div>
+                    <div class="item"><img src="http://placehold.it/585x380" class="img-responsive" /></div>
+                    <div class="item"><img src="http://placehold.it/585x380" class="img-responsive" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="midia-object" src="http://placehold.it/100x50"></a>
+                </div>
+                <div class="media-body">Lorem ipsum dolor sit amet
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="midia-object" src="http://placehold.it/100x50"></a>
+                </div>
+                <div class="media-body">Lorem ipsum dolor sit amet
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="midia-object" src="http://placehold.it/100x50"></a>
+                </div>
+                <div class="media-body">Lorem ipsum dolor sit amet
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="midia-object" src="http://placehold.it/100x50"></a>
+                </div>
+                <div class="media-body">Lorem ipsum dolor sit amet
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="midia-object" src="http://placehold.it/100x50"></a>
+                </div>
+                <div class="media-body">Lorem ipsum dolor sit amet
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="http://placehold.it/200x500" class="img-responsive" />
+        </div>
+    </section>
+
+    <section id="tabela" class="container">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Amazonense</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Copa do mundo</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Copa América</a></li>
+      </ul>
+      <div class="row">
+        <div id="jogo1" class="col-md-3 text-center game">
+            <script type="text/javascript">getJogo('#jogo1');</script>
+        </div>
+        <div id="jogo2" class="col-md-3 game">
+            <script type="text/javascript">getJogo('#jogo2');</script>
+        </div>
+        <div id="jogo3" class="col-md-3 game">
+           <script type="text/javascript">getJogo('#jogo3');</script>
+        </div>
+        <div id="jogo4" class="col-md-3 game">
+           <script type="text/javascript">getJogo('#jogo4');</script>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <!-- /container -->
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
@@ -59,18 +131,18 @@
     ga('send', 'pageview');
     </script>
     <script>
-            $(function(){
-            $('#header').load("header.html", function(page) {
-              $('#header').after(page).remove();
-            });
-          });
+    $(function() {
+        $('#header').load("header.html", function(page) {
+            $('#header').after(page).remove();
+        });
+    });
     </script>
     <script type="text/javascript">
-      $(function(){
-        $('#footer').load("footer.html", function(page){
-          $('#footer').after(page).remove();
+    $(function() {
+        $('#footer').load("footer.html", function(page) {
+            $('#footer').after(page).remove();
         });
-      });
+    });
     </script>
 </body>
 
